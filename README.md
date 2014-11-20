@@ -6,8 +6,8 @@ AngularJs module for SaaS API ("Working"/"Saved"/"Error").
 Example on <code><a href="http://vizir.co">Vizir.co</a></code>
 
 ### USAGE
-#### Javascript
 
+```javacript
     $httpSaasApi.get("/path/42", { firstname: "John", lastname: "Doe" },function (data) {
       
       // success
@@ -20,9 +20,11 @@ Example on <code><a href="http://vizir.co">Vizir.co</a></code>
       console.log("error");
     
     }); 
-#### HTML:
+```
 
+
+```html
     <http-saas-api-success success="api.success" />
     <http-saas-api-is-loading loading="api.loading" />
     <http-saas-api-errors errors="api.errors" />
-
+```
